@@ -32,7 +32,7 @@ function first() {
 
 function second(){
 	# while hour is not 10:00 PM, sleep for 1 second
-	while [ $(date +%H%M%P) -le "1000PM" ]
+	while [ $(date +%H%M%P) != "1000PM" ]
 	do
 		sleep 1
 	done
